@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background: rgb(77, 17, 17);
+    color: white;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero{
+    
+    width: 40vw;
+}
+h1{
+    text-align: center;
+    color: rgb(218, 215, 211);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+.finder{
+    width: 40vw;
+}
+
+input{
+  outline: none;
+  background: none;
+  border: none;
+  width: 80%;
+  border-bottom: 1px solid rgb(218, 215, 211);  
+}
+
+button{
+    border: none;
+    padding: .2rem;
+    /* background: white; */
+    color: black;
+    cursor: pointer;
+    /* color: cornsilk; */
+}
+.result{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    width: 90vw;
+    gap: 10px;
+}
+.card{
+    position: relative;
+    margin-top: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 17rem;
+    /* width: 20vw; */
+}
+
+.text{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(61, 58, 58, 0.808), rgba(128, 128, 128, 0.726));
+    top: 0%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 8s;
+}
+.card:hover .text{
+    display: block;
+}
+
+.text p{
+    background: none;
+    margin-top: 8rem;
+    letter-spacing: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 2rem;
+    /* color: yellow; */
+}
+
+.card img{
+   width: 100%;
+   height: 100%;
+}
+
+.textBad{
+    text-align: center;
+    margin-top: 10rem;
+    right:20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+@media (max-width:600px) {
+    .result{
+        grid-template-columns: 1fr;
+    }
+}
