@@ -105,6 +105,20 @@ h3{
     font-weight: 800;
     text-transform: uppercase;
 }
+.random{
+    color: blanchedalmond;
+    border: 1px solid blanchedalmond;
+    border-radius: 10%;
+    padding: 6px;
+    text-transform: uppercase;
+    transition: all 1s;
+}
+
+.random:hover{
+    background: blanchedalmond;
+    color: black;
+    font-weight: 700;
+}
 
 @media (max-width:600px) {
     .result{
